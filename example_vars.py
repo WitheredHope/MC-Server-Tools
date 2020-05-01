@@ -1,0 +1,4 @@
+checkedMods = []
+modPath = ""
+modPack = ""
+packVersion = ""
