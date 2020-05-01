@@ -1,4 +1,0 @@
-checkedMods = []
-modPath = ""
-modPack = ""
-packVersion = ""
