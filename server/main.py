@@ -19,13 +19,15 @@ def search(array, string):
     return()
 
 app = Flask(__name__)
-versions = []
-files=getFiles()
-for mods in checkedMods:
-    versions.append(search(files,mods))
+
 
 @app.route("/")
 def main():
+    versions = []
+    files=getFiles()
+    print(files)
+    for mods in checkedMods:
+        versions.append(search(files,mods))
     return ("""
             We're Currently running {} v{} <br/>
             Updated Mod Versions are: <br/>
